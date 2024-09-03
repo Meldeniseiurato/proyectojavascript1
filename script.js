@@ -9,3 +9,9 @@ for(let i =0;<precios.length;i++){
     consol.console.log(i);
     
 }
+document.querySelectorAll(".boton-comprar").forEach((button) => {
+    button.addEventListener('click', (evento) => {
+        console.log(evento.target.value)
+        confirm("Comprar por valor de: "+evento.target.value)
+    });
+});
